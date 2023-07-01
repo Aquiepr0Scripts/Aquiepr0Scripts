@@ -1,5 +1,1 @@
-local plr = game:GetService("Players").LocalPlayer
-
-local coins = plr.Leaderstats:WaitForChild("Coins")
-
-coins.Value = 9999999999999999 ----- Coins value -----
+-- bruh
