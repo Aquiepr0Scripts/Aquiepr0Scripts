@@ -1,0 +1,11 @@
+local plr = game:GetService("Players")
+local lea = plr.leaderstats
+
+local money = lea:WaitForChild("Money", 300)
+local Wins = lea:WaitForChild("Wins", 300)
+
+local amount = 999999999999 ----- Amonut of wins and money -----
+
+
+money.Value = amount
+Wins.Value = amount
