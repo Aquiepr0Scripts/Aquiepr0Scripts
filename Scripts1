@@ -1,0 +1,7 @@
+local lea = game:GetService("Players").localplayer.leaderstats
+
+local money = lea:WaitForChild("Money")
+local wins = lea:WaitForChild("Wins")
+
+money.Value = 999999
+wins.Value = 999999
