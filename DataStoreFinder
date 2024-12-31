@@ -1,0 +1,19 @@
+function GetDataStore()
+local DataStore = game:GetService("DataStoreService")
+	local DSP = DataStore:ListDataStoresAsync()
+	local datastore = {}
+	while (true) do
+		for i, DataStoreInfo in ipairs(DSP:GetCurrentPage()) do
+			datastore[i] = DataStoreInfo.DataStoreName
+		end
+		if DSP.IsFinished then
+			break
+		else
+			DSP:AdvanceToNextPageAsync()
+		end
+		
+end
+end
+for i = 1, #GetDataStore() do
+  print(GetDataStore[i])
+end
